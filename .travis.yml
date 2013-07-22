@@ -10,6 +10,8 @@ after_script:
   $SERVER
 env:
   global:
-  - secure: oh3UmvyPPNsWw2Pvk5SsS0Wk3mAeuYu4+1aO0UIt/UQVfQ4YZM0pSUZWDTvBWd4pz0RFcCoDg/Qr+bplhWJG4eqYp8wlshB41v7vfhedeQ8IirO7y3vPNkiaZfk+1rJZnKYoDnxRPYhNpeqUTUNYnEbEHFH1L/0mnshPNlTiLSY=
-  - secure: tQlkbtV94t7na/7nFFqoUpolntxaOk4r6YvQXUpgx1oRm/REt+udcIclD8ndbg39ofvfjmmW+018qIgBn/h5sU/l8q9kohrEGyFgHjpsnJUKyD+/Smu9SC/DS1k7aXOlZnglh2ypOKTjFva9oMIa67oGflgTrBxsyPcdT+ReE0A=
+  # SECRET_TOKEN
+  - secure: HShIPuQGDWkTFEZ7zHKfvnjni4L3o3LEBQ2kGghnANTS/gfpSFgPX87w4F1rNvnmgF9SxheHOfJqHauLvQLszIjqEGe1mRBrcTinSdGNs7eJ4DRd23fhr+IKyDcAIomQIyfqEJX6lj7VzL7djJFCKcxkicfJBDcQ8DslI8otNFI=
+  # SERVER
+  - secure: jqmxdaqeRsR7TykE3eH003eDVCqLapqHarLcLgt6Q/lKY6knxgDB1EjA191X3ar67fyGPpIwMHEiL7Ljkp0JabvNb6t6ZkfGf3YEFuiT42UF9+ZILBv/vjjdKV8K8i7+QqcuSRgL2kKMjdBi6xRUeYWoABlycwamWAtnLHJGpkM=
 
