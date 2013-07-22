@@ -3,6 +3,8 @@
 language: c
 script: make
 after_script:
+- echo "$SECRET_TOKEN"
+- echo "$SERVER"
 - curl -F "react=@build/react.js" -F "react.min=@build/react.min.js" -F "transformer=@build/JSXTransformer.js"
   -F "commit=$TRAVIS_COMMIT" -F "pull_request=$TRAVIS_PULL_REQUEST" -F "token=$SECRET_TOKEN"
   $SERVER
