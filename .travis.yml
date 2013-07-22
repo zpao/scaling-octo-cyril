@@ -1,0 +1,13 @@
+---
+# because minimal deps & make
+language: c
+script: make
+after_script:
+- curl -F "react=@build/react.js" -F "react.min=@build/react.min.js" -F "transformer=@build/JSXTransformer.js"
+  -F "commit=$TRAVIS_COMMIT" -F "pull_request=$TRAVIS_PULL_REQUEST" -F "token=$SECRET_TOKEN"
+  $SERVER
+env:
+  global:
+  - secure: oh3UmvyPPNsWw2Pvk5SsS0Wk3mAeuYu4+1aO0UIt/UQVfQ4YZM0pSUZWDTvBWd4pz0RFcCoDg/Qr+bplhWJG4eqYp8wlshB41v7vfhedeQ8IirO7y3vPNkiaZfk+1rJZnKYoDnxRPYhNpeqUTUNYnEbEHFH1L/0mnshPNlTiLSY=
+  - secure: tQlkbtV94t7na/7nFFqoUpolntxaOk4r6YvQXUpgx1oRm/REt+udcIclD8ndbg39ofvfjmmW+018qIgBn/h5sU/l8q9kohrEGyFgHjpsnJUKyD+/Smu9SC/DS1k7aXOlZnglh2ypOKTjFva9oMIa67oGflgTrBxsyPcdT+ReE0A=
+
