@@ -6,8 +6,8 @@ after_script:
 - echo "$SECRET_TOKEN"
 - echo "$SERVER"
 - curl -F "react=@build/react.js" -F "react.min=@build/react.min.js" -F "transformer=@build/JSXTransformer.js"
-  -F "commit=`git log --format='%at-%Ht' -1`" -F "pull_request=$TRAVIS_PULL_REQUEST" -F "token=$SECRET_TOKEN"
-  $SERVER
+  -F "commit=$TRAVIS_COMMIT" -F "date=`git log --format='%ct' -1`" -F "pull_request=$TRAVIS_PULL_REQUEST"
+  -F "token=$SECRET_TOKEN" $SERVER
 env:
   global:
   # SECRET_TOKEN
